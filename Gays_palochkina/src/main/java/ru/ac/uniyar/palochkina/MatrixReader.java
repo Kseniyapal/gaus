@@ -1,10 +1,11 @@
 package ru.ac.uniyar.palochkina;
 
+import javafx.util.Pair;
+
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.ArrayList;
 import java.util.Scanner;
-import javafx.util.Pair;
 
 public class MatrixReader {
     public static ArrayList<ArrayList<Pair<Integer, Integer>>> readMatrix() {
@@ -21,7 +22,7 @@ public class MatrixReader {
                     int second = 1;
                     String[] tokens = scanner.next().split("/");
                     first = Integer.parseInt(tokens[0]);
-                    if(tokens.length > 1) {
+                    if (tokens.length > 1) {
                         second = Integer.parseInt(tokens[1]);
                     }
                     row.add(new Pair<>(first, second));
